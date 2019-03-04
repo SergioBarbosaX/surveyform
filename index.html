@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/surveyform.css">
+    <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.7.0/css/all.css'
+          integrity='sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ' crossorigin='anonymous'>
+    <title>Survey form</title>
+</head>
+<body>
+    <h1 id="title">Survey form</h1>
+
+    <main id="main-area">
+        <p id="description">Give us some information about your programming habits</p>
+
+        <form id="survey-form">
+            <fieldset>
+                <legend>Personal information</legend>
+                    <div class="row">
+                        <div class="label">
+                            <label id="name-label" for="name"><i class="fa fa-user"></i> *Name: </label>
+                        </div>
+                        <div class="inputBox">
+                            <input id="name" type="text" placeholder="Enter your full name" required>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="label">
+                            <label id="email-label" for="email"><i class="fa fa-envelope"></i> *Email: </label>
+                        </div>
+                        <div class="inputBox">
+                            <input id="email" type="email" placeholder="Enter your email address" required>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="label">
+                            <label id="number-label" for="number"> *Age: </label>
+                        </div>
+                        <div class="inputBox">
+                            <input id="number" type="number" min="18" max="120" placeholder="Enter your age" required>
+                        </div>
+                    </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>Survey questions</legend>
+                <div class="row">
+                    <div class="label">
+                        <label id="preferred-label" for="dropdown">Which is your preferred programming language: </label>
+                    </div>
+                    <div class="inputBox">
+                        <select id="dropdown" name="language">
+                            <option value="html" selected>html</option>
+                            <option value="css">css</option>
+                            <option value="javascript">javascript</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="label">
+                        <label id="often-label">How often do you use your preferred programing language:</label>
+                    </div>
+                    <div class="inputBox">
+                        <ul>
+                            <li class="radioButton">
+                                <label for="use-every"><input id="use-every" type="radio" name="use" value="every">
+                                    In every project</label>
+                            </li>
+                            <li class="radioButton">
+                                <label for="use-from"> <input id="use-from" type="radio" name="use" value="from">
+                                    From time to time</label>
+                            </li>
+                            <li class="radioButton">
+                                <label for="use-never"><input id="use-never" type="radio" name="use" value="never">
+                                    Never</label>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="label">
+                        <label id="tools">Which tools do you use when you are programming with your preferred language
+                            (Check all that apply): </label>
+                    </div>
+                    <div class="inputBox">
+                        <ul>
+                            <li class="checkboxCell">
+                                <label for="texteditor"><input id="texteditor" type="checkbox" name="tool1"
+                                                               value="texteditor"> Text editor</label>
+                            </li>
+                            <li class="checkboxCell">
+                                <label for="ide"><input id="ide" type="checkbox" name="tool2" value="ide"> IDE</label>
+                            </li>
+                            <li class="checkboxCell">
+                                <label for="cvs"><input id="cvs" type="checkbox" name="tool3"
+                                                        value="cvs"> Control version source</label>
+                            </li>
+                            <li class="checkboxCell">
+                                <label for="framework"><input id="framework" type="checkbox" name="tool4"
+                                                              value="framework"> Framework</label>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="label">
+                        <label id="comments">Additional comments: </label>
+                    </div>
+                    <div class="inputBox">
+                        <textarea id="additional-comments" placeholder="Insert your additional comments here"></textarea>
+                    </div>
+                </div>
+            </fieldset>
+            <button id="submit" type="submit" value="submit">Submit</button>
+        </form>
+    </main>
+
+    <footer>
+        <i class="fab fa-html5"></i>
+        <i class="fab fa-css3-alt"></i>
+
+        <span id="poweredby">Powered by Sergio Barbosa</span>
+    </footer>
+
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcec/v1/bundle.js"></script>
+</body>
+</html>

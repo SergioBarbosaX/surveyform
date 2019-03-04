@@ -1,0 +1,80 @@
+html, body {
+    text-align: center;
+    background-color: #a7d7d3;
+}
+form {
+    text-align: center;
+}
+div {
+    display: block;
+}
+ul {
+    list-style: none;
+}
+footer {
+    padding-top: 14px;
+    padding-bottom: 14px;
+    margin-top: 14px;
+    width: 100%;
+    z-index: 100;
+    opacity: 1;
+    background-color: rgba(235,235,235,.6);
+}
+.label {
+    display: inline-block;
+    text-align: right;
+    vertical-align: top;
+    width: 40%;
+    padding: 5px;
+    margin-top: 10px;
+}
+.inputBox {
+    display: inline-block;
+    vertical-align: bottom;
+    text-align: left;
+    width: 50%;
+}
+.ul-item {
+    list-style: none;
+}
+.radioButton {
+    position: relative;
+    left: -40px;
+}
+.checkboxCell {
+    position: relative;
+    left: -40px;
+}
+.fa-html5 {
+    font-size: 24px;
+    color: #ff0000;
+}
+.fa-css3-alt {
+    font-size: 24px;
+    color: #00b3ff;
+}
+#main-area {
+    background-color: white;
+    border-radius: 4px;
+    width: 75%;
+    max-width: 800px;
+    margin: auto;
+    padding: 10px;
+
+}
+#additional-comments {
+    width: 400px;
+    height: 200px;
+    margin-top: 20px;
+}
+#submit {
+    background-color: #05dfff;
+    border-radius: 4px;
+    height: 40px;
+    width: 90px;
+    color: white;
+    margin-top: 20px;
+}
+#poweredby {
+    margin-left: 20px;
+}
