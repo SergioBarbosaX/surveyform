@@ -53,6 +53,9 @@ footer {
     font-size: 24px;
     color: #00b3ff;
 }
+#name, #email, #number {
+    width: 100%;
+}
 #main-area {
     background-color: white;
     border-radius: 4px;
@@ -60,10 +63,9 @@ footer {
     max-width: 800px;
     margin: auto;
     padding: 10px;
-
 }
 #additional-comments {
-    width: 400px;
+    width: 100%;
     height: 200px;
     margin-top: 20px;
 }
