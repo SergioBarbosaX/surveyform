@@ -1,17 +1,20 @@
 html, body {
+    font-family: Montserrat Alternates, Times, serif;
     text-align: center;
     background-color: #a7d7d3;
 }
 form {
-    text-align: center;
-}
-div {
     display: block;
+    margin-top: 0;
+}
+label {
+    cursor: default;
 }
 ul {
     list-style: none;
 }
 footer {
+    font-family: Times, serif;
     padding-top: 14px;
     padding-bottom: 14px;
     margin-top: 14px;
@@ -20,49 +23,17 @@ footer {
     opacity: 1;
     background-color: rgba(235,235,235,.6);
 }
-.label {
-    display: inline-block;
-    text-align: right;
-    vertical-align: top;
-    width: 40%;
-    padding: 5px;
-    margin-top: 10px;
-}
-.inputBox {
-    display: inline-block;
-    vertical-align: bottom;
-    text-align: left;
-    width: 50%;
-}
-.ul-item {
-    list-style: none;
-}
-.radioButton {
-    position: relative;
-    left: -40px;
-}
-.checkboxCell {
-    position: relative;
-    left: -40px;
-}
-.fa-html5 {
-    font-size: 24px;
-    color: #ff0000;
-}
-.fa-css3-alt {
-    font-size: 24px;
-    color: #00b3ff;
-}
-#name, #email, #number {
-    width: 100%;
-}
 #main-area {
     background-color: white;
     border-radius: 4px;
-    width: 75%;
-    max-width: 800px;
+    width: 90%;
     margin: auto;
-    padding: 10px;
+}
+#name-label, #name {
+    align-items: center;
+}
+#name, #email, #number {
+    width: 100%;
 }
 #additional-comments {
     width: 100%;
@@ -76,7 +47,56 @@ footer {
     width: 90px;
     color: white;
     margin-top: 20px;
+    margin-bottom: 20px;
 }
 #poweredby {
+    font-family: Arial, Times, serif;
     margin-left: 20px;
+}
+.row {
+    width: 100%;
+    padding: 5px 10px 5px 10px;
+}
+.label {
+    display: inline-block;
+    text-align: right;
+    width: 45%;
+    padding: 5px;
+    vertical-align: top;
+    margin-top: 10px;
+}
+.inputBox {
+    display: inline-block;
+    text-align: left;
+    width: 45%;
+    padding: 5px;
+    vertical-align: middle;
+}
+.radioButton {
+    position: relative;
+    left: -43px;
+    margin-left: 10px;
+    display: block;
+    padding-bottom: 10px;
+}
+.checkboxCell {
+    position: relative;
+    left: -43px;
+    margin-left: 10px;
+    display: block;
+    padding-bottom: 10px;
+}
+.fa-html5 {
+    font-size: 24px;
+    color: #ff0000;
+}
+.fa-css3-alt {
+    font-size: 24px;
+    color: #00b3ff;
+}
+@media screen and (max-width: 768px) {
+    .label .inputBox {
+        width: 100%;
+        margin-top: 0;
+    }
 }
